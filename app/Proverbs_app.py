@@ -4,7 +4,7 @@ import random
 import os
 
 # Path to your dataset file
-JSON_PATH = r"C:\Users\Khechane\OneDrive\Desktop\AI-Proverbs-Project\data\proverbs.json"
+JSON_PATH = os.path.join("data", "proverbs.json")
 
 @st.cache_data  # Optional: Cache for performance
 def load_proverbs(json_path):
